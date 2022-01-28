@@ -1,0 +1,78 @@
+/*
+  Project name(项目名称)：CSS_width_and_height 
+  File name(文件名): t
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/1/28 
+  Time(创建时间)： 21:01
+  Version(版本): 1.0
+  Description(描述)：
+  1. width
+通过 width 属性可以设置元素内容区的宽度，属性的可选值如下：
+值	    描述
+auto	默认值，浏览器自动计算元素的实际宽度
+length	使用具体数值配合 px、cm 等单位来定义宽度
+%	定义基于父元素宽度百分比的宽度
+inherit	从父元素继承 width 属性的值
+
+
+2. height
+height 属性用来定义元素内容区的高度，属性的可选值如下：
+值	    描述
+auto	默认值，浏览器自动计算元素的实际高度
+length	使用具体数值配合 px、cm 等单位来定义高度
+%	定义基于父元素高度百分比的高度
+inherit	从父元素继承 width 属性的值
+
+
+3. max-width 和 max-height
+max-width 和 max-height 属性分别用来设置元素内容区的最大宽度和最大高度。当定义了 max-width 和 max-height 属性时，
+不论 width 或 height 属性的实际值是多少，width 和 height 属性的实际值都会小于等于 max-width 和
+ max-height 属性的值。max-width 和 max-height 属性的可选值如下：
+值	    描述
+none	默认值，表示对元素的最大宽度或高度没有限制
+length	使用具体数值配合 px、cm 等单位来定义元素的最大宽度或高度
+%	定义基于父元素宽度和高度百分比的最大宽度或高度
+inherit	从父元素继承 max-width 或 max-height 属性的值
+
+当 max-width 属性的值小于 width 属性时，width 属性的值会被重新定义为与 max-width 属性相同的值；
+当 max-width 属性的值大于 width 时，max-width 属性将会被忽略；
+当 max-width 属性的值小于 min-width 时，max-width 属性将会被忽略。
+
+
+4. min-width 和 min-height
+min-width 和 min-height 属性用来设置元素内容区的最小宽度和最小高度，当定义了 min-width 和 min-height 属性时，不论 width
+或 height 属性的实际值是多少，width 和 height 属性的实际值都会大于等于 min-width 和 min-height 属性的值。min-width 和 min-height 属性的可选值如下：
+值	    描述
+length	使用具体数值配合 px、cm 等单位来定义元素的最小宽度或高度，默认值取决于浏览器
+%	定义基于父元素宽度和高度百分比的最小宽度或高度
+inherit	从父元素继承 min-width 和 min-height 属性的值
+
+当 min-width 属性的值小于 width 时，min-width 属性将会被忽略；
+当 min-width 属性的值大于 width 时，min-width 属性的值将被重新定义为与 min-width 属性相同的值；
+当 min-width 属性的值大于 max-width 时，max-width 属性将会被忽略。
+ */
+
+div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.box-one {
+    /*为了能更直观的看出效果，这里为元素设置上边框和背景色*/
+    border: 1px solid black;
+    background: #CFF;
+}
+
+span {
+    border: 1px solid red;
+    background: #CCC;
+}
+
+div.box-two {
+    border: 1px solid black;
+    background: #CFF;
+    width: 200px;
+}
+
